@@ -1,0 +1,1440 @@
+<html lang="en-us"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Source Themes Academic 4.8.0">
+<meta name="author" content="Man Parvesh Singh Randhawa">
+<meta name="description" content="CS Grad student">
+<link rel="alternate" hreflang="en-us" href="https://manparvesh.com/">
+<meta name="theme-color" content="rgb(3, 175, 255)">
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/js/mathjax-config.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async=""></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async=""></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&amp;display=swap">
+<link rel="stylesheet" href="/css/academic.css">
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-79116900-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-79116900-2', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/input/tex/extensions/noerrors.js" charset="UTF-8"></script>
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Man Parvesh Singh Randhawa">
+<link rel="manifest" href="/index.webmanifest">
+<link rel="icon" type="image/png" href="/images/icon_hu9c6384c471666297d310bd37a73d0cf8_49227_32x32_fill_lanczos_center_2.png">
+<link rel="apple-touch-icon" type="image/png" href="/images/icon_hu9c6384c471666297d310bd37a73d0cf8_49227_192x192_fill_lanczos_center_2.png">
+<link rel="canonical" href="https://manparvesh.com/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="Man Parvesh Singh Randhawa">
+<meta property="og:url" content="https://manparvesh.com/">
+<meta property="og:title" content="Man Parvesh Singh Randhawa">
+<meta property="og:description" content="CS Grad student"><meta property="og:image" content="https://manparvesh.com/img/manparvesh-bench.jpg">
+<meta property="twitter:image" content="https://manparvesh.com/img/manparvesh-bench.jpg"><meta property="og:locale" content="en-us">
+<meta property="og:updated_time" content="2019-08-20T15:50:19-05:00">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://manparvesh.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://manparvesh.com/"
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+<script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "rgb(3, 175, 255)",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "rgb(3, 175, 255)"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+<title>Man Parvesh Singh Randhawa</title>
+<style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style><style></style><style></style></head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="" cz-shortcut-listen="true"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-classic cc-bottom cc-color-override-405625984 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.cookiesandyou.com" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Got it!</a></div><!--googleon: all--></div><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-classic cc-bottom cc-color-override-405625984 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.cookiesandyou.com" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Got it!</a></div><!--googleon: all--></div>
+<aside class="search-results" id="search">
+<div class="container">
+<section class="search-header">
+<div class="row no-gutters justify-content-between mb-3">
+<div class="col-6">
+<h1>Search</h1>
+</div>
+<div class="col-6 col-search-close">
+<a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+</div>
+</div>
+<div id="search-box">
+<input name="q" id="search-query" placeholder="Search..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+</div>
+</section>
+<section class="section-search-results">
+<div id="search-hits">
+</div>
+</section>
+</div>
+</aside>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+<div class="container">
+<div class="d-none d-lg-inline-flex">
+<a class="navbar-brand" href="/">Man Parvesh Singh Randhawa</a>
+</div>
+<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class="navbar-brand" href="/">Man Parvesh Singh Randhawa</a>
+</div>
+<div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+<ul class="navbar-nav d-md-inline-flex">
+<li class="nav-item">
+<a class="nav-link active" href="/#about" data-target="#about"><span>Home</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="/#experience" data-target="#experience"><span>Experience</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="/#posts" data-target="#posts"><span>Posts</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="/files/manparvesh_resume.pdf"><span>Resume</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
+</li>
+</ul>
+</div>
+<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class="nav-item">
+<a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+</li>
+<li class="nav-item dropdown theme-dropdown">
+<a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+<i class="fas fa-palette" aria-hidden="true"></i>
+</a>
+<div class="dropdown-menu">
+<a href="#" class="dropdown-item js-set-theme-light">
+<span>Light</span>
+</a>
+<a href="#" class="dropdown-item js-set-theme-dark">
+<span>Dark</span>
+</a>
+<a href="#" class="dropdown-item js-set-theme-auto dropdown-item-active">
+<span>Automatic</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<span class="js-widget-page d-none"></span>
+<section id="about" class="home-section wg-about   ">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4">
+<div id="profile">
+<img class="avatar avatar-circle" src="/author/man-parvesh-singh-randhawa/avatar_huc9a7c32e2aaf80f0b8655f74a61e52a8_152753_270x270_fill_q90_lanczos_center.jpg" alt="Man Parvesh Singh Randhawa">
+<div class="portrait-title">
+<h2>Man Parvesh Singh Randhawa</h2>
+<h3>CS Grad student</h3>
+<h3>
+<a href="https://utdallas.edu" target="_blank" rel="noopener">
+<span>The University of Texas at Dallas</span>
+</a>
+</h3>
+</div>
+<ul class="network-icon" aria-hidden="true">
+<li>
+<a href="mailto:mxr180061@utdallas.edu">
+<i class="fas fa-envelope big-icon"></i>
+</a>
+</li>
+<li>
+<a href="https://github.com/manparvesh" target="_blank" rel="noopener">
+<i class="fab fa-github big-icon"></i>
+</a>
+</li>
+<li>
+<a href="https://photos.manparvesh.com" target="_blank" rel="noopener">
+<i class="fas fa-camera-retro big-icon"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/manparvesh/" target="_blank" rel="noopener">
+<i class="fab fa-linkedin big-icon"></i>
+</a>
+</li>
+<li>
+<a href="/files/manparvesh_resume.pdf">
+<i class="ai ai-cv big-icon"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-lg-8">
+<h1>Biography</h1>
+<p>I am a graduate student in the Department of Computer Science at the University of Texas at Dallas graduating in May 2021. I have a Bachelor of Technology degree from the Indian Institute of Technology (IIT) Guwahati.</p>
+<p>Previously, I worked at Works Applications, Singapore as a Software Engineer, where I worked on delivering central libraries, microservices and distributed multi-tenant architecture to thousands of developers inside the company who utilized them to build various products for our customers. Aside from work, I am also an open-source enthusiast and have created projects that were listed in GitHub trending.</p>
+<p>My interests lie in solving problems related to large-scale distributed software systems.</p>
+<div class="row">
+<div class="col-md-5">
+<h3>Interests</h3>
+<ul class="ul-interests">
+<li>Distributed Computing</li>
+<li>Software Engineering</li>
+<li>Information Security</li>
+</ul>
+</div>
+<div class="col-md-7">
+<h3>Education</h3>
+<ul class="ul-edu fa-ul">
+
+<li>
+<i class="fa-li fas fa-graduation-cap"></i>
+<div class="description">
+<p class="course">MS in Computer Science, 2021</p>
+<p class="institution">The University of Texas at Dallas</p>
+</div>
+</li>
+<li>
+<i class="fa-li fas fa-graduation-cap"></i>
+<div class="description">
+<p class="course">BTech, 2016</p>
+<p class="institution">Indian Institute of Technology Guwahati</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="skills" class="home-section wg-featurette   ">
+<div class="container">
+<div class="row featurette">
+<div class="col-md-12 section-heading">
+<h1>Skills</h1>
+</div>
+<div class="col-12 col-sm-4">
+<div class="featurette-icon"><i class="fab fa-java"></i></div>
+<h3>Java</h3>
+<p>Spring (Boot &amp; MVC), JUnit, Maven</p>
+</div>
+<div class="col-12 col-sm-4">
+<div class="featurette-icon"><i class="fab fa-docker"></i></div>
+<h3>DevOps</h3>
+<p>Docker, Ansible, Kubernetes</p>
+</div>
+<div class="col-12 col-sm-4">
+<div class="featurette-icon"><i class="fab fa-aws"></i></div>
+<h3>Cloud Engineering</h3>
+<p>AWS EC2, EKS, CloudFormation, CloudWatch, networking etc.</p>
+</div>
+<div class="col-12 col-sm-4">
+<div class="featurette-icon"><i class="fab fa-python"></i></div>
+<h3>Python</h3>
+<p>Flask, Django, Click</p>
+</div>
+<div class="col-12 col-sm-4">
+<div class="featurette-icon"><i class="fas fa-database"></i></div>
+<h3>Databases</h3>
+<p>Cassandra, Redis, MySQL</p>
+</div>
+<div class="col-12 col-sm-4">
+<div class="featurette-icon"><i class="fab fa-jenkins"></i></div>
+<h3>Continuous Integration</h3>
+<p>Jenkins CI, Travis CI</p>
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="home-section wg-experience   ">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 section-heading">
+<h1>Experience</h1>
+</div>
+<div class="col-12 col-lg-8">
+
+<div class="row experience">
+<div class="col-auto text-center flex-column d-none d-sm-flex">
+<div class="row h-50">
+<div class="col ">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+<div class="m-2">
+<span class="badge badge-pill border ">&nbsp;</span>
+</div>
+<div class="row h-50">
+<div class="col border-right">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+</div>
+<div class="col py-2">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title exp-title text-muted mt-0 mb-1">Software Engineer Intern</h4>
+<h4 class="card-title exp-company text-muted my-0"><a href="https://www.copart.com/" target="_blank" rel="noopener">Copart</a></h4>
+<div class="text-muted exp-meta">
+Jun 2020 –
+Aug 2020
+<span class="middot-divider"></span>
+<span>Dallas, TX</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row experience">
+<div class="col-auto text-center flex-column d-none d-sm-flex">
+<div class="row h-50">
+<div class="col border-right">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+<div class="m-2">
+<span class="badge badge-pill border ">&nbsp;</span>
+</div>
+<div class="row h-50">
+<div class="col border-right">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+</div>
+<div class="col py-2">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title exp-title text-muted mt-0 mb-1">Software Engineer</h4>
+<h4 class="card-title exp-company text-muted my-0"><a href="https://www.worksap.com" target="_blank" rel="noopener">Works Applications Co. Ltd</a></h4>
+<div class="text-muted exp-meta">
+Oct 2016 –
+Jul 2019
+<span class="middot-divider"></span>
+<span>Singapore</span>
+</div>
+<div class="card-text"><ul>
+<li>
+<p><strong>Backend &amp; Architecture:</strong></p>
+<ul>
+<li>Self-managed Kubernetes clusters migrated to AWS Elastic Kubernetes Service</li>
+<li>Microservices and multitenancy</li>
+</ul>
+</li>
+<li>
+<p><strong>Application Security:</strong></p>
+<ul>
+<li>Implemented Single Sign-On Authentication</li>
+<li>Proposed security mechanism</li>
+<li>Improved authentication and access control methods</li>
+<li>Wrote unit and integration tests</li>
+<li>Summer 2018 Internship Mentor</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row experience">
+<div class="col-auto text-center flex-column d-none d-sm-flex">
+<div class="row h-50">
+<div class="col border-right">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+<div class="m-2">
+<span class="badge badge-pill border ">&nbsp;</span>
+</div>
+<div class="row h-50">
+<div class="col border-right">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+</div>
+<div class="col py-2">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title exp-title text-muted mt-0 mb-1">Android Developer Intern</h4>
+<h4 class="card-title exp-company text-muted my-0">EasyTables</h4>
+<div class="text-muted exp-meta">
+Aug 2015 –
+Aug 2015
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row experience">
+<div class="col-auto text-center flex-column d-none d-sm-flex">
+<div class="row h-50">
+<div class="col border-right">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+<div class="m-2">
+<span class="badge badge-pill border ">&nbsp;</span>
+</div>
+<div class="row h-50">
+<div class="col border-right">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+</div>
+<div class="col py-2">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title exp-title text-muted mt-0 mb-1">Android Developer Intern</h4>
+<h4 class="card-title exp-company text-muted my-0">IIT Guwahati Alumni Association</h4>
+<div class="text-muted exp-meta">
+Jun 2015 –
+
+Jul 2015
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row experience">
+<div class="col-auto text-center flex-column d-none d-sm-flex">
+<div class="row h-50">
+<div class="col border-right">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+<div class="m-2">
+<span class="badge badge-pill border ">&nbsp;</span>
+</div>
+<div class="row h-50">
+<div class="col ">&nbsp;</div>
+<div class="col">&nbsp;</div>
+</div>
+</div>
+<div class="col py-2">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title exp-title text-muted mt-0 mb-1">Summer Research intern</h4>
+<h4 class="card-title exp-company text-muted my-0">IIT Guwahati</h4>
+<div class="text-muted exp-meta">
+Jul 2014 –
+Aug 2014
+</div>
+<div class="card-text">Guide: Dr. A. Murali Krishna</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="posts" class="home-section wg-pages   ">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 section-heading">
+<h1>Recent Posts</h1>
+</div>
+<div class="col-12 col-lg-8">
+<div class="media stream-item">
+<div class="media-body">
+<h3 class="article-title mb-0 mt-0">
+<a href="/post/2019-08-20-work-to-ms/">My transition from a Software Engineer to a CS grad student</a>
+</h3>
+<div class="article-style">
+Why I decided to go for a Master’s degree
+</div>
+<div class="stream-meta article-metadata">
+<div class="article-metadata">
+<span class="article-date">
+Aug 20, 2019
+</span>
+<span class="middot-divider"></span>
+<span class="article-reading-time">
+2 min read
+</span>
+<span class="middot-divider"></span>
+<span class="article-categories">
+<i class="fas fa-folder mr-1"></i><a href="/category/personal/">personal</a></span>
+</div>
+</div>
+</div>
+<div class="ml-3">
+<a href="/post/2019-08-20-work-to-ms/">
+<img src="/post/2019-08-20-work-to-ms/featured_hu6651a917e498c68cb0195af82886435b_27240_150x0_resize_lanczos_2.png" alt="My transition from a Software Engineer to a CS grad student">
+</a>
+</div>
+</div>
+<div class="media stream-item">
+<div class="media-body">
+<h3 class="article-title mb-0 mt-0">
+<a href="/post/2019-06-30-cookiecutter-latex/">Cookiecutter LaTeX templates</a>
+</h3>
+<div class="article-style">
+LaTeX templates 📃 using cookiecutter
+</div>
+<div class="stream-meta article-metadata">
+<div class="article-metadata">
+<span class="article-date">
+Jun 30, 2019
+</span>
+<span class="middot-divider"></span>
+<span class="article-reading-time">
+1 min read
+</span>
+<span class="middot-divider"></span>
+<span class="article-categories">
+<i class="fas fa-folder mr-1"></i><a href="/category/automation/">Automation</a></span>
+</div>
+</div>
+</div>
+<div class="ml-3">
+<a href="/post/2019-06-30-cookiecutter-latex/">
+<img src="/post/2019-06-30-cookiecutter-latex/featured_hua564bd004b7a425696c94f04527d8523_70927_150x0_resize_lanczos_2.png" alt="Cookiecutter LaTeX templates">
+</a>
+</div>
+</div>
+<div class="media stream-item">
+<div class="media-body">
+<h3 class="article-title mb-0 mt-0">
+<a href="/post/2019-06-02-remote-vscode/">Remote VS Code</a>
+</h3>
+<div class="article-style">
+Running and using Visual Studio Code in a remote server
+</div>
+<div class="stream-meta article-metadata">
+<div class="article-metadata">
+<div>
+<span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>
+</div>
+<span class="article-date">
+Jun 2, 2019
+</span>
+<span class="middot-divider"></span>
+<span class="article-reading-time">
+2 min read
+</span>
+<span class="middot-divider"></span>
+<span class="article-categories">
+<i class="fas fa-folder mr-1"></i><a href="/category/devops/">DevOps</a></span>
+</div>
+</div>
+</div>
+<div class="ml-3">
+<a href="/post/2019-06-02-remote-vscode/">
+<img src="/post/2019-06-02-remote-vscode/featured_hu14e9dda5dd08eb2dce324cc6eae6b49c_617859_150x0_resize_lanczos_2.png" alt="Remote VS Code">
+</a>
+</div>
+</div>
+<div class="media stream-item">
+<div class="media-body">
+<h3 class="article-title mb-0 mt-0">
+<a href="/post/2019-05-26-my-ubuntu-setup/">My Ubuntu Setup</a>
+</h3>
+<div class="article-style">
+My Ubuntu desktop 🖥️ setup using Ansible
+</div>
+<div class="stream-meta article-metadata">
+<div class="article-metadata">
+<div>
+<span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>
+</div>
+<span class="article-date">
+May 26, 2019
+</span>
+<span class="middot-divider"></span>
+<span class="article-reading-time">
+2 min read
+</span>
+<span class="middot-divider"></span>
+<span class="article-categories">
+<i class="fas fa-folder mr-1"></i><a href="/category/automation/">Automation</a></span>
+</div>
+</div>
+</div>
+<div class="ml-3">
+<a href="/post/2019-05-26-my-ubuntu-setup/">
+<img src="/post/2019-05-26-my-ubuntu-setup/featured_hu893c54b97e638cf022dc3fd169096e9c_1879884_150x0_resize_lanczos_2.png" alt="My Ubuntu Setup">
+</a>
+</div>
+</div>
+<div class="media stream-item">
+<div class="media-body">
+<h3 class="article-title mb-0 mt-0">
+<a href="/post/2019-05-19-deep-learning-setup/">Deep Learning Setup</a>
+</h3>
+<div class="article-style">
+Easy deep learning setup for my home office 👨‍💻
+</div>
+<div class="stream-meta article-metadata">
+<div class="article-metadata">
+<span class="article-date">
+May 19, 2019
+</span>
+<span class="middot-divider"></span>
+<span class="article-reading-time">
+2 min read
+</span>
+<span class="middot-divider"></span>
+<span class="article-categories">
+<i class="fas fa-folder mr-1"></i><a href="/category/deep-learning/">Deep-Learning</a></span>
+</div>
+</div>
+</div>
+<div class="ml-3">
+<a href="/post/2019-05-19-deep-learning-setup/">
+<img src="/post/2019-05-19-deep-learning-setup/featured_hu5d25ac6cfb841312ad403791c1bdf916_15416_150x0_resize_lanczos_2.png" alt="Deep Learning Setup">
+</a>
+</div>
+</div>
+<div class="see-all">
+<a href="/post/">
+See all posts
+<i class="fas fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="home-section wg-portfolio   ">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 section-heading">
+<h1>Projects</h1>
+
+</div>
+<div class="col-12 col-lg-8">
+<span class="d-none default-project-filter">*</span>
+<div class="project-toolbar">
+<div class="project-filters">
+<div class="btn-toolbar">
+<div class="btn-group flex-wrap">
+<a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+<a href="#" data-filter=".js-id-python" class="btn btn-primary btn-lg">Python</a>
+<a href="#" data-filter=".js-id-java" class="btn btn-primary btn-lg">Java</a>
+</div>
+</div>
+</div>
+</div>
+<div class="isotope projects-container row js-layout-row " style="position: relative; height: 710.812px;">
+<div class="col-12 isotope-item js-id-python js-id-featured" style="position: absolute; left: 0px; top: 0px;">
+<div class="media stream-item">
+<div class="media-body">
+<h3 class="article-title mb-0 mt-0">
+<a href="/project/yoda/">yoda</a>
+</h3>
+<div class="article-style">
+Personal assistant based on the command line with several inbuilt features
+</div>
+<div class="stream-meta article-metadata">
+<div>
+<span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>
+</div>
+</div>
+<div class="btn-links">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/yoda-pa/yoda" target="_blank" rel="noopener">
+<i class="fab fa-github mr-1"></i>
+Code
+</a>
+</div>
+</div>
+<div class="ml-3">
+<a href="/project/yoda/">
+<img src="/project/yoda/featured_hu2a0862e76ffea3ede25cff65389ee734_483022_150x0_resize_lanczos_2.png" alt="yoda">
+</a>
+</div>
+</div>
+</div>
+<div class="col-12 isotope-item js-id-android js-id-java" style="position: absolute; left: 0px; top: 177.703px;">
+<div class="media stream-item">
+<div class="media-body">
+<h3 class="article-title mb-0 mt-0">
+<a href="/project/ideatrackerplus/">Idea Tracker Plus</a>
+</h3>
+<div class="article-style">
+Enhanced Android app to track projects and ideas
+</div>
+<div class="stream-meta article-metadata">
+<div>
+<span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>
+</div>
+</div>
+<div class="btn-links">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/IdeaTrackerPlus/IdeaTrackerPlus" target="_blank" rel="noopener">
+<i class="fab fa-github mr-1"></i>
+Code
+</a>
+</div>
+</div>
+<div class="ml-3">
+<a href="/project/ideatrackerplus/">
+<img src="/project/ideatrackerplus/featured_hu1dbedacc2dec2f8bd7a759cafa8e9db7_77051_150x0_resize_lanczos_2.png" alt="Idea Tracker Plus">
+</a>
+</div>
+</div>
+</div>
+<div class="col-12 isotope-item js-id-cpp js-id-featured" style="position: absolute; left: 0px; top: 355.406px;">
+<div class="media stream-item">
+<div class="media-body">
+<h3 class="article-title mb-0 mt-0">
+<a href="/project/stlmp/">stlmp</a>
+</h3>
+<div class="article-style">
+Data structures and Algorithm library in C++
+</div>
+<div class="stream-meta article-metadata">
+<div>
+<span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>
+</div>
+</div>
+<div class="btn-links">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/stlmp/stlmp" target="_blank" rel="noopener">
+<i class="fab fa-github mr-1"></i>
+Code
+</a>
+</div>
+</div>
+<div class="ml-3">
+<a href="/project/stlmp/">
+<img src="/project/stlmp/featured_huda1ea37dac8328da5f1b0e5ec100a5db_122430_150x0_resize_lanczos_2.png" alt="stlmp">
+</a>
+</div>
+</div>
+</div>
+<div class="col-12 isotope-item js-id-java js-id-featured" style="position: absolute; left: 0px; top: 533.109px;">
+<div class="media stream-item">
+<div class="media-body">
+<h3 class="article-title mb-0 mt-0">
+<a href="/project/contradis/">CONTRADIS</a>
+</h3>
+<div class="article-style">
+Contaminant Transport analysis software
+</div>
+<div class="stream-meta article-metadata">
+<div>
+<span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>
+</div>
+</div>
+<div class="btn-links">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://contradis.github.io/" target="_blank" rel="noopener">
+<i class="fas fa-globe mr-1"></i>
+More details
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/Man-Parvesh-IITG-Thesis.pdf">
+<i class="fas fa-file mr-1"></i>
+Thesis
+</a>
+</div>
+</div>
+<div class="ml-3">
+<a href="/project/contradis/">
+<img src="/project/contradis/featured_hu920a8a1e3614a72e105f6627c1785e8b_401827_150x0_resize_q90_lanczos.jpg" alt="CONTRADIS">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="publications" class="home-section wg-pages   ">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 section-heading">
+<h1>Recent Publications</h1>
+</div>
+<div class="col-12 col-lg-8">
+
+<div class="view-list-item">
+<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+<a href="/publication/2018-07-14-igc-book-chapter/">Experimental analysis of salt diffusion in compacted clays by Through Diffusion and Half-Cell technique</a>
+<div class="article-metadata">
+<span>Partha Das</span>, <span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>, <span>Bharat TV</span>
+</div>
+<div class="btn-links">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/contradis/">
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://link.springer.com/chapter/10.1007/978-981-13-0899-4_22" target="_blank" rel="noopener">
+Springer Link
+</a>
+</div>
+</div>
+<div class="view-list-item">
+<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+<a href="/publication/2016-12-15-igc-iit-madras/">Experimental analysis of salt diffusion in compacted clays by Through Diffusion and Half-Cell technique</a>
+<div class="article-metadata">
+<span>Partha Das</span>, <span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>, <span>Bharat TV</span>
+</div>
+<div class="btn-links">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://igschennai.in/IGC2016_IIT_Madras/igc2016proceedings/papers/THEME4/IGC_2016_paper_350.pdf" target="_blank" rel="noopener">
+PDF
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/contradis/">
+Project
+</a>
+</div>
+</div>
+<div class="view-list-item">
+<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+<a href="/publication/2016-07-22-igs-bangalore/">Salt Diffusion in Compacted Plastic Clay: Experimental and Theoretical Evaluation</a>
+<div class="article-metadata">
+<span>Partha Das</span>, <span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>, <span>Bharat TV</span>
+</div>
+<div class="btn-links">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/papers/002-igs-bangalore.pdf" target="_blank" rel="noopener">
+PDF
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/contradis/">
+Project
+</a>
+</div>
+</div>
+<div class="view-list-item">
+<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+<a href="/publication/2014-10-18-android-geotech/">Development of an Android application for Geotechnical engineers</a>
+<div class="article-metadata">
+<span><a href="/author/man-parvesh-singh-randhawa/">Man Parvesh Singh Randhawa</a></span>, <span>A. Murali Krishna</span>
+</div>
+<div class="btn-links">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/papers/001-android-geotech.pdf" target="_blank" rel="noopener">
+PDF
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="tags" class="home-section wg-tag-cloud   ">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 section-heading">
+<h1>Popular Topics</h1>
+</div>
+<div class="col-12 col-lg-8">
+<div class="tag-cloud">
+<a href="/tag/android/" style="font-size:1.1333333333333333rem">Android</a>
+<a href="/tag/ansible/" style="font-size:1.1333333333333333rem">ansible</a>
+<a href="/tag/college/" style="font-size:1.3868170836458344rem">college</a>
+<a href="/tag/computer-vision/" style="font-size:0.7rem">Computer Vision</a>
+<a href="/tag/cookiecutter/" style="font-size:0.7rem">cookiecutter</a>
+<a href="/tag/featured/" style="font-size:1.3868170836458344rem">featured</a>
+<a href="/tag/fun/" style="font-size:1.1333333333333333rem">fun</a>
+<a href="/tag/java/" style="font-size:1.5666666666666669rem">java</a>
+<a href="/tag/linux/" style="font-size:1.1333333333333333rem">linux</a>
+<a href="/tag/maven/" style="font-size:1.1333333333333333rem">maven</a>
+<a href="/tag/open-source/" style="font-size:1.5666666666666669rem">open-source</a>
+<a href="/tag/programming/" style="font-size:1.916520466224962rem">programming</a>
+<a href="/tag/python/" style="font-size:1.1333333333333333rem">python</a>
+<a href="/tag/review/" style="font-size:1.5666666666666669rem">review</a>
+<a href="/tag/software-testing/" style="font-size:1.1333333333333333rem">software-testing</a>
+<a href="/tag/status/" style="font-size:1.3868170836458344rem">status</a>
+<a href="/tag/tutorial/" style="font-size:1.706168841117857rem">tutorial</a>
+<a href="/tag/ubuntu/" style="font-size:1.1333333333333333rem">ubuntu</a>
+<a href="/tag/undergrad/" style="font-size:1.3868170836458344rem">undergrad</a>
+<a href="/tag/work/" style="font-size:1.3868170836458344rem">work</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="home-section wg-contact   ">
+<div class="container">
+<div class="row contact-widget">
+<div class="col-12 col-lg-4 section-heading">
+<h1>Contact</h1>
+</div>
+<div class="col-12 col-lg-8">
+<div class="mb-3">
+<form name="contact" method="POST" action="https://formspree.io/mxr180061@utdallas.edu">
+<div class="form-group form-inline">
+<label class="sr-only" for="inputName">Name</label>
+<input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required="">
+</div>
+<div class="form-group form-inline">
+<label class="sr-only" for="inputEmail">Email</label>
+<input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required="">
+</div>
+<div class="form-group">
+<label class="sr-only" for="inputMessage">Message</label>
+<textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required=""></textarea>
+</div>
+<button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
+</form>
+</div>
+<ul class="fa-ul">
+</ul>
+</div>
+</div>
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/c.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/java.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+<script>const code_highlighting = true;</script>
+<script>const isSiteThemeDark = true;</script>
+<script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+<script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+<script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+<script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+<div class="container">
+<footer class="site-footer">
+<p class="powered-by">
+© Man Parvesh Singh Randhawa
+</p>
+<p class="powered-by">
+Powered by the
+<a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+<a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+<span class="float-right" aria-hidden="true">
+<a href="#" class="back-to-top">
+<span class="button_icon">
+<i class="fas fa-chevron-up fa-2x"></i>
+</span>
+</a>
+</span>
+</p>
+</footer>
+</div>
+<div id="modal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Cite</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<pre><code class="tex hljs"></code></pre>
+</div>
+<div class="modal-footer">
+<a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+<i class="fas fa-copy"></i> Copy
+</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+<i class="fas fa-download"></i> Download
+</a>
+<div id="modal-error"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<iframe id="netlify-identity-widget" title="Netlify identity widget" style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; " src="about:blank"></iframe><iframe id="netlify-identity-widget" title="Netlify identity widget" style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; " src="about:blank"></iframe></body></html>

@@ -1,0 +1,4 @@
+[1211/182323.338:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1211/182323.358:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\zn\AppData\Roaming\Brackets\live-dev-profile\Crashpad\attachments\723a831c-030d-4a5a-ae3c-42cc5d5699eb: The system cannot find the path specified. (0x3)
+[1211/182323.359:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\zn\AppData\Roaming\Brackets\live-dev-profile\Crashpad\attachments\240184ed-fbfa-495f-af9f-05fc6ba81dd9: The system cannot find the path specified. (0x3)
+[1211/182323.368:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\zn\AppData\Roaming\Brackets\live-dev-profile\Crashpad\attachments\65be1951-889d-48d2-bce8-285c3fa8ff38: The system cannot find the path specified. (0x3)
